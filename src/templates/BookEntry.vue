@@ -2,7 +2,7 @@
   <Layout>
     <div class="book">
       <h3>
-        <a :href="$page.bookEntry.url">{{ $page.bookEntry.title }}</a>
+        <a :href="$page.bookEntry.url" target="_blank">{{ $page.bookEntry.title }}</a>
       </h3>
 
       <div>
@@ -79,7 +79,7 @@ query Book ($id: ID!){
 <script>
 export default {
   metaInfo: {
-    title: 'Details'
+    title: 'Book Details'
   }
 }
 </script>
